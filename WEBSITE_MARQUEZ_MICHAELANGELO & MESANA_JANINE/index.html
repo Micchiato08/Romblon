@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #7eb3c6;
+    }
+
+    #form-body {
+      background-color: antiquewhite;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    * {
+      text-align: center;
+    }
+
+    #radio-font {
+      color: azure;
+    }
+
+    p {
+      font-size: 20px;
+      color: black;
+    }
+
+    .labe {
+      color: black;
+    }
+    input[type="radio"] {
+      accent-color: green;
+    }
+  </style>
+  <body>
+    <div id="form-body" style="width: 100%px; border: 15px; padding: 10px">
+      <form action="/splashpage.html">
+        <h3
+          style="color: rgb(12, 130, 130); font-size: 30px; margin-bottom: 20px"
+        >
+          USER LOGIN
+        </h3>
+
+        <p style="color: rgb(12, 130, 130)">Email Address:</p>
+        <input type="email" name="email" placeholder="Enter Email" />
+
+        <div>
+          <p style="color: rgb(12, 130, 130)">Password:</p>
+          <input type="password" name="password" placeholder="Enter Password" />
+        </div>
+
+        <div id="radio-font">
+          <input type="radio" name="type1" value="Old Student" />
+          <label for="type1" class="labe">Filipino Citizen</label>
+          <input type="radio" name="type1" value="Transferee" />
+          <label for="type2" class="labe">Foreigner</label>
+        </div>
+        <div>
+          <a href="form.html"
+            ><button type="submit" style="font-size: 15px">Login</button></a
+          >
+        </div>
+
+        <hr />
+      </form>
+    </div>
+  </body>
+</html>
